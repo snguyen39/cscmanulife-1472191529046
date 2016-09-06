@@ -27,16 +27,19 @@ var isMobile = {
 };
 
 var gradMakerDownload = document.getElementById("gradMakerDownload");
+var manulifeDownload = document.getElementById("manulifeDownload");
 
 if(isMobile.any() == "iOS"){
     gradMakerDownload.href = "itms-services://?action=download-manifest&url=https://cscmanulife.mybluemix.net/build/GradMaker.plist";
-    
+    manulifeDownload.href = "itms-services://?action=download-manifest&url=https://cscmanulife.mybluemix.net/build/ManulifeDocLib.plist";
 }
 else if(isMobile.any() == "Android") {
     gradMakerDownload.href = "";
+    manulifeDownload.href = "";
 }
 else{
     gradMakerDownload.href = "";
+    manulifeDownload.href = "";
 }
 
 
